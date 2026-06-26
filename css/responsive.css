@@ -1,0 +1,117 @@
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 992px){
+
+    .hero{
+
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+
+    }
+
+    .hero-text{
+
+        margin: auto;
+
+    }
+
+    .hero-buttons{
+
+        justify-content: center;
+
+    }
+
+    .about-container{
+
+        flex-direction: column;
+
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px){
+
+    .header{
+
+        padding: 18px 6%;
+
+    }
+
+    #menu-btn{
+
+        display: block;
+
+    }
+
+    .navbar{
+
+        position: absolute;
+
+        top: 100%;
+        right: -100%;
+
+        width: 250px;
+
+        background: var(--surface);
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px;
+
+        box-shadow: var(--shadow);
+
+        transition: .3s;
+
+    }
+
+    .navbar.active{
+
+        right: 0;
+
+    }
+
+    .hero{
+
+        padding: 120px 6% 60px;
+
+    }
+
+    .hero h1{
+
+        font-size: 3rem;
+
+    }
+
+    .hero h2{
+
+        font-size: 1.6rem;
+
+    }
+
+    .hero-image img{
+
+        max-width: 320px;
+
+    }
+
+    .about{
+
+        padding: 80px 6%;
+
+    }
+
+    .about-info{
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
