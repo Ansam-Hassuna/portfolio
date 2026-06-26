@@ -20,13 +20,7 @@ body{
 
     color: var(--text-color);
 
-    transition:.4s;
-
-    background: linear-gradient(
-        135deg,
-        #f8fbff,
-        #edf4ff
-    );
+    transition: .4s;
 
 }
 
@@ -35,6 +29,7 @@ body{
 =========================== */
 
 :root{
+
     --primary:#2563EB;
     --secondary:#7C3AED;
 
@@ -47,15 +42,26 @@ body{
     --shadow:0 10px 30px rgba(0,0,0,.08);
 
     --radius:16px;
+
+    --header-bg: rgba(255,255,255,.9);
+
 }
 
 .dark-mode{
 
     --bg-color:#0F172A;
+
     --surface:#1E293B;
 
     --text-color:#F8FAFC;
+
     --text-light:#CBD5E1;
+
+    --primary:#60A5FA;
+
+    --shadow:0 10px 30px rgba(0,0,0,.4);
+
+    --header-bg: rgba(15,23,42,.9);
 
 }
 
@@ -78,7 +84,8 @@ body{
 
     padding: 18px 10%;
 
-    background: rgba(255,255,255,.9);
+    background: var(--surface);
+    background: var(--header-bg);
 
     backdrop-filter: blur(10px);
 
@@ -789,5 +796,27 @@ body{
         text-align:center;
 
     }
+
+}
+
+#theme-toggle{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-size:1.3rem;
+
+    color:var(--text);
+
+    transition:.3s;
+
+}
+
+#theme-toggle:hover{
+
+    color:var(--primary);
 
 }
