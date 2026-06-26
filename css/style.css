@@ -24,8 +24,8 @@ body{
 
     background: linear-gradient(
         135deg,
-        #F8FAFC 0%,
-        #EEF4FF 100%
+        #f8fbff,
+        #edf4ff
     );
 
 }
@@ -609,13 +609,14 @@ body{
 
     box-shadow:var(--shadow);
 
-    transition:.3s;
+    transition: all .3s ease;
 
 }
 
 .skill-card:hover{
 
-    transform:translateY(-8px);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.12);
 
 }
 
@@ -632,5 +633,86 @@ body{
 .skill-card h3{
 
     font-size:1.1rem;
+
+}
+
+/* ===========================
+   Contact
+=========================== */
+
+.contact{
+    padding:100px 10%;
+}
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.contact-card{
+
+    background:var(--surface);
+
+    border-radius:16px;
+
+    padding:30px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contact-card i{
+
+    font-size:2.5rem;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.contact-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.contact-card p{
+
+    color:var(--text-light);
+
+    word-break:break-word;
+
+}
+
+
+.footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#0f172a;
+
+    color:white;
 
 }
