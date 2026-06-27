@@ -128,7 +128,7 @@ function typeEffect(){
 
             deleting = true;
 
-            setTimeout(typeEffect,1200);
+            setTimeout(typeEffect,500);
 
             return;
 

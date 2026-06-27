@@ -196,6 +196,8 @@ body{
 
     gap:60px;
 
+    animation: fadeIn 1s ease;
+
 }
 
 .hero-content{
@@ -235,6 +237,8 @@ body{
     font-size:1.8rem;
 
     color:var(--secondary);
+
+     min-height: 50px;
 
 }
 
@@ -388,6 +392,27 @@ body{
     }
 
 }
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
 
 /* ===========================
    About Section
@@ -832,7 +857,7 @@ body{
 
     font-size:1.3rem;
 
-    color:var(--text);
+    color: var(--text-color);
 
     transition:.3s;
 
