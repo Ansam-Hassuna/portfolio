@@ -99,3 +99,57 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+
+// Typing Effect
+
+const words = [
+    "Front-End Developer",
+    "Computer Science Student",
+    "Java Developer",
+    "Problem Solver"
+];
+
+const typingText = document.getElementById("typing-text");
+
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typeEffect(){
+
+    const currentWord = words[wordIndex];
+
+    if(!deleting){
+
+        typingText.textContent = currentWord.substring(0,charIndex++);
+
+        if(charIndex > currentWord.length){
+
+            deleting = true;
+
+            setTimeout(typeEffect,1200);
+
+            return;
+
+        }
+
+    }else{
+
+        typingText.textContent = currentWord.substring(0,--charIndex);
+
+        if(charIndex === 0){
+
+            deleting = false;
+
+            wordIndex = (wordIndex + 1) % words.length;
+
+        }
+
+    }
+
+    setTimeout(typeEffect,deleting ? 50 : 100);
+
+}
+
+typeEffect();

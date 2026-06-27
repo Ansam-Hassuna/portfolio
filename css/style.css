@@ -228,11 +228,11 @@ body{
 
 }
 
-.hero h2{
+.hero h3{
 
     margin-top:15px;
 
-    font-size:2rem;
+    font-size:1.8rem;
 
     color:var(--secondary);
 
@@ -247,6 +247,14 @@ body{
     color:var(--text-light);
 
     max-width:600px;
+
+}
+
+#typing-text{
+
+    color: var(--primary);
+
+    font-weight:700;
 
 }
 
